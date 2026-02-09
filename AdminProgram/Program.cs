@@ -10,6 +10,7 @@ namespace AdminProgram
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Dit is mijn eerste code!");
         }
     }
 }
