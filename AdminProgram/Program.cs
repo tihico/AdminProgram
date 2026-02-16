@@ -11,6 +11,7 @@ namespace AdminProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Dit is mijn eerste code!");
+            User T = new User("Timothy", "Almere", "gmail.com", "egg", "122223", 3);
         }
     }
 }
