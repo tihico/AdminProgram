@@ -8,7 +8,8 @@ namespace AdminProgram
 {
     internal class User
     {
-        private string _name;
+        //private string _name;
+        private string _name { get; }
         private string _address;
         private string _email;
         private string _password;
@@ -31,29 +32,16 @@ namespace AdminProgram
             }
         }
 
-        public User(string name, string address, string email, string password, string phoneNumber, int age)
+        public User(string name, string address, string email, string password, int age)
         {
             _name = name;
             _address = address;
             _email = email;
             _password = password;
-            _phoneNumber = phoneNumber;
             _age = age;
 
-        }
-        public void SetEmail(string email)
-        {
-            if (email.Contains("@gmail.com"))
-            {
-                _email = email;
-            }
-            else
-            {
-                Console.WriteLine("ERROR dit is geen GMAIL zoals een normale persoon");
-            }
-        }
-        public string GetEmail()
-        { return _email; }
-    }
 
+        }
+
+    }
 }
