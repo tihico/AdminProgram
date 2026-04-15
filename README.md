@@ -1,8 +1,34 @@
-Mijn programma maakt het mogelijk om users te maken, uit te printen, editen en verwijderen. 
+In mijn programma kan je de volgende: 
 
-De menu structuur werkt met het intypen van de getalen die er staan naast het woord.  
-Program is voor de menu, en naar andere paginas te sturen. 
+users maken 
+uit printen 
+editen 
+verwijderen uit de lijst 
+stoppen 
 
-User is de user zelf (object), de construct en zeker maken dat de email @gmail.com erin heeft
+De gebruiker aanmaken  
 
-UserManager is voor toevoegen, verwijderen en editen van de users. Ook maakt het een random ID voor je user. 
+Wanneer je een gebruiker will aanmaken, typ je 1 in en begin je het process van vragen. 
+Het programma vraagt je voor je naam, email, wachtwoord en leeftijd. 
+
+
+ 
+De gebruikers uit printen 
+
+Dit print uit alle gebruikers. 
+
+
+Gebruiker editen 
+
+Hier kan je de gebruiker editen, na hun ID intypt kan je de gebruiker naam, email of leeftijd veranderen. 
+
+
+
+Gebruiker verwijderen 
+
+Hier kan je de gebruiker verwijderen uit de lijst. 
+Na hun ID in typen, is de gebruiker niet meer in de lijst. 
+
+Stoppen 
+
+Dit stopt de programma 
