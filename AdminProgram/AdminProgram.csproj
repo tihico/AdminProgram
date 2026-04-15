@@ -49,6 +49,7 @@
     <Compile Include="User.cs" />
     <Compile Include="UserAdd.cs" />
     <Compile Include="UserList.cs" />
+    <Compile Include="UserManager.cs" />
     <Compile Include="UserRemove.cs" />
   </ItemGroup>
   <ItemGroup>

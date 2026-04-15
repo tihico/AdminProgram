@@ -9,12 +9,16 @@ namespace AdminProgram
     internal class User
     {
         //private string _name;
-        private string _name { get; }
-        private string _address;
+        public string Name { get; set; }
+        public string Address { get; set; }
         private string _email;
-        private string _password;
-        private string _phoneNumber;
-        private int _age;
+      
+        public string Password { get; set; }
+        public string PhoneNumber { get; set; }
+        public int Age { get; set; }
+
+        public int ID = 0;
+        
 
         public string Email
         {
@@ -23,25 +27,33 @@ namespace AdminProgram
             {
                 if (value.Contains("@gmail.com"))
                 {
+                    
                     _email = value;
                 }
                 else
                 {
-                    Console.WriteLine("ERROR dit is geen GMAIL zoals een normale persoon");
+                    // Dit code maakt zeker dat @gmail.com in de email zit
+                    Console.WriteLine("ERROR dit is geen @gmail.com email!");
                 }
             }
         }
+        
 
-        public User(string name, string address, string email, string password, int age)
+        public User(string name, string address, string email, string password, int age, int id)
         {
-            _name = name;
-            _address = address;
-            _email = email;
-            _password = password;
-            _age = age;
+            Name = name;
+            Address = address;
+            Email = email;
+            Password = password;
+            Age = age;
+            ID = id;
 
 
         }
-
+       public void print()
+        {
+            // User uitgeprint
+            Console.WriteLine($"Name: " + Name + " Email: " + Email + " Leeftijd: " + Age + " ID:" + ID); 
+        }
     }
 }

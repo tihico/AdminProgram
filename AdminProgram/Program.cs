@@ -8,42 +8,55 @@ namespace AdminProgram
 {
     internal class Program
     {
+       
         static void Main(string[] args)
         {
+            Boolean stop = false;
+
             int something = 0;
+            UserManager usermanager = new UserManager();
 
-            Console.WriteLine("Voer een nummer in voor welke actie je wil nemen");
-            Console.WriteLine("1. Gebruiker maken");
-            Console.WriteLine("2. Gebruiker tonen");
-            Console.WriteLine("3. Gebruiker verwijderen");
+            while (!stop)
+            {
 
-            int.TryParse(Console.ReadLine(), out something);
-            Console.Clear();
-            if (something == 1)
-            {
-               
-                Console.WriteLine("hoi");
-                UserAdd opdracht = new UserAdd();
-                opdracht.UserAdding();
-            }
-            if (something == 2)
-            {
-                //Opdracht9 opdracht = new Opdracht9();
-                //opdracht.Start();
-                //Console.WriteLine("hoi 2");
-                //foreach (User u in _userlist)
-                //{
+                Console.WriteLine("Voer een nummer in voor welke actie je wil nemen");
+                Console.WriteLine("1. Gebruiker maken");
+                Console.WriteLine("2. Gebruiker tonen");
+                Console.WriteLine("3. Gebruiker verwijderen");
+                Console.WriteLine("4. Gebruiker editen");
+                Console.WriteLine("5. STOP");
 
-                //    Console.WriteLine(u.name);
-                //}
+                int.TryParse(Console.ReadLine(), out something);
+                Console.Clear();
+                if (something == 1)
+                {
+                    // Begin process van user toevoegen
+                    usermanager.UserAdding();
+                }
+                if (something == 2)
+                {
+                    // Print alleen alle users
+                    usermanager.print();
+                }
+                if (something == 3)
+                {
+                    // print de users, geeft je keuze om een user te deleten.
+                    usermanager.print();
+                    usermanager.UserRemove();
+
+                }
+                if (something == 4)
+                {
+                    // print de users, maakt je in editing gaan
+                    usermanager.print();
+                    usermanager.UserEdit();
+                }
+                if (something == 5)
+                {
+                    // hier stopt de code
+                    stop = true;
+                }
             }
-            if (something == 3)
-            {
-                //UserRemove remove = new UserRemove();
-                //remove.Start();
-                //Console.WriteLine("im Going to kill you");
-            }
-;
         }
     }
 }

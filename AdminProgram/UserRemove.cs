@@ -8,5 +8,8 @@ namespace AdminProgram
 {
     internal class UserRemove
     {
+        public UserRemove() 
+        {
+        }
     }
 }
