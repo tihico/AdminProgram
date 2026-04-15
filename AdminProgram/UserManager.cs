@@ -88,6 +88,7 @@ namespace AdminProgram
             Console.Clear();
             Console.WriteLine("Zeg de address");
             string address = Console.ReadLine();
+            Console.Clear();
 
 
             Console.WriteLine("New user toegevoegd");
